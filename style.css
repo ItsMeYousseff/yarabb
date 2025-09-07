@@ -1,0 +1,69 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #ccc;
+  min-height: 100vh;
+
+  /* Stack everything vertically and center it */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Headings (you use h3) */
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 24px 0 12px;
+  text-align: center;
+}
+
+/* Each form block */
+form {
+  width: 320px;                 /* controls the card width */
+  display: flex;
+  flex-direction: column;       /* stack inputs and button */
+  gap: 12px;                    /* spacing between fields */
+  margin-bottom: 28px;          /* space before next section */
+}
+
+/* Inputs */
+form input {
+  width: 100%;
+  display: block;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fff;
+}
+
+/* Button */
+form button {
+  width: 100%;
+  padding: 12px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+form button:hover {
+  background: #333;
+}
+
+/* Optional: accessible focus states */
+input:focus, button:focus {
+  outline: 2px solid #333;
+  outline-offset: 2px;
+}
